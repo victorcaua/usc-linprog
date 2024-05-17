@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Gruppo', monospace;
+    margin: 0;
+    padding: 0;
+    color: #023047;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #777;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+}
+
+.homePage h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(110, 110, 110);
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none ;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0;
+    font-family: 'Gruppo', monospace;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #1962ff;
+}
+
+@media only screen and (max-width: 600px) {
+    .page {
+        padding: 20px;
+    }
+
+    .homePage {
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .homePage h1 {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+
+
+
+}
